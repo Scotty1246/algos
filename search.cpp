@@ -67,3 +67,22 @@ int main()
 
     return 0;
 }
+
+int linearSearch(auto data, auto key)
+{
+	int i;
+	int position = 0;
+	for(i=0;i < data.size(); i++)
+	   {
+	   	if(data[i] == key)
+	   	  {
+		  	position = i;
+		 	return position;
+		  }
+		  else
+		  {
+			position = -1;
+		  }
+	   }
+	return position;
+}
