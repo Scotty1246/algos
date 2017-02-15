@@ -106,14 +106,19 @@ void selectionsort (auto& data)
                           }
                    }
                 swap (data[i], data[min]);
+		if ( i % 20000 == 0 )
+		   {
+			cout << i << " passes have been completed" << endl <<endl;
+		   }
+
            }
 	
-	cout << "List in oder: ";
+	//cout << "List in oder: ";
 
-        for(i = 0; i < data.size(); i++)
+       /* for(i = 0; i < data.size(); i++)
            {
 		cout << data[i] << ",";
-           }
+           }*/
 
 }
 
